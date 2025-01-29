@@ -1,4 +1,4 @@
-<img src='../sefra_seabirds_logog.png' align="right" height="140" />
+<img src='../sefra_seabirds_logo.png' align="right" height="140" />
 
 This repository contains a pair of `R` packages `sefraInputs` and `sefra` that provide functions and example scripts for preparation of data and model runs for the CCSBT SEFRA-seabirds project. The packages also provide access to the biological inputs for the risk assessment model, including demographic parameters and density maps for the seabird populations. In each case, compilation of the package will create a vignette containing a working example of data preparation for the risk assessment model, and an example model run, using artificial data. The data preparation process can then be repeated on your local machine, using your own data.
 
