@@ -1,4 +1,4 @@
-<img src='profile/sefra-seabirds.png' align="right" height="140" />
+<img src='../sefra_seabirds_logog.png' align="right" height="140" />
 
 # Southern Hemisphere seabird risk assessment
 
