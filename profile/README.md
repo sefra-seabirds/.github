@@ -56,15 +56,17 @@ In order to obtain access to the repositories:
 
     Please do not send your PAT to the repository administrators directly. Following creation of a PAT, the administrators will automatically recieve notification via GitHub, and can then provide access approval for that token.
 
-1. Create an environment variable `GITHUB_SHRA_DATA_PAT` defined as your personal access token string. There are different ways to do this. We recommend adding the following line to your `.Renviron` file, which should be located in your `R_USER` (or `HOME`) directory:
+1. Create an environment variable `GITHUB_SEFRA_SEABIRDS_PAT` defined as your personal access token string. There are different ways to do this. We recommend adding the following line to your `.Renviron` file, which should be located in your `R_USER` (or `HOME`) directory:
 
-       GITHUB_SHRA_DATA_PAT = "github_pat_XXXXX"
+       GITHUB_SEFRA_SEABIRDS_PAT = "github_pat_XXXXX"
 
     where `"github_pat_XXXXX"` is your personal access token. Ensure that there is no whitespace at the end of the added line, and that the `.Renviron` file ends with an empty line.
 
     For manual editing of your `.Renviron` file, the location of your `R_USER` directory can be found by calling `Sys.getenv("R_USER")`, or `fs::path_home_r()` from within an `R` session. To view the files in this directory, call `list.files(fs::path_home_r(), all.files = TRUE)`. Alternatively, the `.Renviron` file  can be edited directly within `R` by calling `usethis::edit_r_environ()`. This will open a new window containing your `.Renviron` file. Add the required line to your `.Renviron` file, and close the new window. You must then restart `R` for the changes to take effect.
 
-1. Call `Sys.getenv("GITHUB_SHRA_DATA_PAT")` in a new `R` session to check that your personal access token is returned.
+   Alternatively, `GITHUB_SEFRA_SEABIRDS_PAT` can be included as an environment variable on your local machine. 
+
+1. Call `Sys.getenv("GITHUB_SEFRA_SEABIRDS_PAT")` in a new `R` session to check that your personal access token is returned.
 
 ## Package installation
 
